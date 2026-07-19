@@ -1,12 +1,12 @@
-## Gesture-to-Sound Interaction Demonstration Videos
+# Gesture-to-Sound Interaction Demonstration Videos
 
 This repository contains the demonstration videos to accompany our journal on the "Illusion of Instrument Presence". These videos are provided to help readers directly experience the gesture-to-sound scenarios and understand the participants' unique sonic (acoustic) experiences across different experimental conditions.
 
-Video Index & Condition Matrix
+## Video Index & Condition Matrix
 
 The repository includes 8 video files (.mp4), named according to the following experimental design factors:
 
-Condition A: Drumming (Discrete Action)
+### Condition A: Drumming (Discrete Action)
 
 | File Name | Action Type | Mapping Clarity | Sound Type | Key Characteristics |
 
@@ -20,7 +20,7 @@ Condition A: Drumming (Discrete Action)
 
 | output_with_sound_A_1_4.mp4 | Drumming | Strong | Environmental Sound|
 
-Condition B: Sliding (Continuous Action)
+### Condition B: Sliding (Continuous Action)
 
 | File Name | Action Type | Mapping Clarity | Sound Type | Key Characteristics |
 
