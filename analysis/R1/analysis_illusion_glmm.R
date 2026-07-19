@@ -18,7 +18,7 @@
 
 # ==========================================================
 # Load packages
-# ==========================================================
+
 
 library(lme4)
 library(lmerTest)
@@ -27,10 +27,10 @@ library(tidyverse)
 
 # ==========================================================
 # Load data
-# ==========================================================
+
 
 df_long <- read.csv(
-  "data/illusion_long.csv",
+  "・・・/illusion_long.csv",
   stringsAsFactors = FALSE
 )
 
@@ -46,7 +46,7 @@ summary(df_long)
 # ==========================================================
 # Model 1:
 # Effect of temporal synchrony
-# ==========================================================
+
 
 model_timing <- glmer(
   Illusion ~ Timing + (1|ID),
@@ -67,7 +67,7 @@ exp(fixef(model_timing))
 # ==========================================================
 # Model 2:
 # Effect of gesture type
-# ==========================================================
+
 
 model_gesture <- glmer(
   Illusion ~ Gesture + (1|ID),
@@ -87,7 +87,7 @@ exp(fixef(model_gesture))
 # ==========================================================
 # Model 3:
 # Effect of sound type
-# ==========================================================
+
 
 model_sound <- glmer(
   Illusion ~ Sound + (1|ID),
@@ -108,7 +108,7 @@ exp(fixef(model_sound))
 # Model 4:
 # Full factorial model
 # Timing × Gesture × Sound
-# ==========================================================
+
 
 model_full <- glmer(
   Illusion ~ Timing * Gesture * Sound + (1|ID),
@@ -127,10 +127,10 @@ exp(fixef(model_full))
 
 # ==========================================================
 # Save model summaries
-# ==========================================================
+
 
 sink(
-  "results/glmm_results.txt"
+  "・・・/results/glmm_results.txt"
 )
 
 cat("\n\n===== Timing model =====\n")
