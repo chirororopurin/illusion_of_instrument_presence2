@@ -24,6 +24,17 @@ The following two stimulus videos were not generated using Python scripts:
 
 These stimuli were created by manually adding environmental sound tracks to the corresponding videos using a video editing application. Since no programmatic processing was involved, no Python scripts are provided for these conditions.
 
+## Audio Files
+
+This directory also contains the audio files used for stimulus generation.
+
+| File | Description |
+|------|-------------|
+| `ban.wav` | Instrumental sound used as the drum-like sound corresponding to the drumming action. |
+| `gou1.wav` | Environmental sound used as a non-instrumental sound condition. |
+
+These audio files were combined with the gesture videos to create the final experimental stimuli.
+
 ## Notes
 
 The generated videos are included in the `stimuli/` directory.
