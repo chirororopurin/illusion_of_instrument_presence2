@@ -85,8 +85,8 @@ while cap.isOpened():
                         # 音を鳴らす
                         sound = generate_harp_tone(freq_current[side], duration, sample_rate)
                         sound.play()
-                        sound_events.append((current_time, freq_current[side]))
-                        print(f"🎵 {side}: freq={freq_current[side]:.1f}Hz, vx={vx:.4f}")
+                        sound_events.append({"time": current_time,"freq": freq_current[side],"side": side,"vx": vx})
+                        print(f"🎵 {side}:" f"time={current_time:.3f}s," f"freq={freq_current[side]:.1f}Hz," f"vx={vx:.4f}")
 
             prev_wrist[side] = x
             frame_count[side] += 1
@@ -175,3 +175,46 @@ os.remove(temp_audio)
 #  RIGHT: freq=380.0Hz, vx=0.3112
 #  RIGHT: freq=400.0Hz, vx=0.1075
 #  RIGHT: freq=420.0Hz, vx=0.2033
+
+
+# LEFT:time=0.200s,freq=420.0Hz,vx=-0.4895
+# LEFT:time=0.300s,freq=400.0Hz,vx=-0.1483
+# LEFT:time=0.400s,freq=380.0Hz,vx=-0.1019
+# LEFT:time=0.600s,freq=400.0Hz,vx=0.1879
+# LEFT:time=0.700s,freq=420.0Hz,vx=0.1969
+# LEFT:time=0.800s,freq=440.0Hz,vx=0.4370
+# LEFT:time=0.900s,freq=460.0Hz,vx=0.3239
+# LEFT:time=1.000s,freq=480.0Hz,vx=0.2661
+# LEFT:time=1.100s,freq=500.0Hz,vx=0.1281
+# LEFT:time=1.900s,freq=480.0Hz,vx=-0.2871
+# LEFT:time=2.000s,freq=460.0Hz,vx=-0.4223
+# LEFT:time=2.100s,freq=440.0Hz,vx=-0.1468
+# LEFT:time=2.200s,freq=420.0Hz,vx=-0.3524
+# LEFT:time=2.300s,freq=400.0Hz,vx=-0.1236
+# LEFT:time=2.400s,freq=380.0Hz,vx=-0.1160
+# LEFT:time=3.102s,freq=400.0Hz,vx=0.1487
+# LEFT:time=3.202s,freq=420.0Hz,vx=0.3480
+# LEFT:time=3.302s,freq=440.0Hz,vx=0.2588
+# LEFT:time=3.402s,freq=460.0Hz,vx=0.3799
+# LEFT:time=3.502s,freq=480.0Hz,vx=0.1939
+# LEFT:time=3.602s,freq=500.0Hz,vx=0.2314
+# LEFT:time=3.802s,freq=520.0Hz,vx=0.1137
+# LEFT:time=4.302s,freq=500.0Hz,vx=-0.2169
+# LEFT:time=4.402s,freq=480.0Hz,vx=-0.2385
+# LEFT:time=4.502s,freq=460.0Hz,vx=-0.3090
+# LEFT:time=4.602s,freq=440.0Hz,vx=-0.3157
+# LEFT:time=4.802s,freq=420.0Hz,vx=-0.2229
+# LEFT:time=5.302s,freq=440.0Hz,vx=0.1261
+# RIGHT:time=5.402s,freq=460.0Hz,vx=0.1493
+# RIGHT:time=5.702s,freq=440.0Hz,vx=-0.2660
+# RIGHT:time=5.802s,freq=420.0Hz,vx=-0.1213
+# RIGHT:time=5.903s,freq=400.0Hz,vx=-0.2305
+# RIGHT:time=6.003s,freq=380.0Hz,vx=-0.1679
+# RIGHT:time=6.103s,freq=360.0Hz,vx=-0.1445
+# RIGHT:time=6.203s,freq=340.0Hz,vx=-0.1742
+# RIGHT:time=6.803s,freq=360.0Hz,vx=0.1770
+# RIGHT:time=6.903s,freq=380.0Hz,vx=0.3112
+# RIGHT:time=7.003s,freq=400.0Hz,vx=0.1075
+# RIGHT:time=7.103s,freq=420.0Hz,vx=0.2033
+# 一時動画出力完了: temp_video.mp4
+# 音イベント数: 39
