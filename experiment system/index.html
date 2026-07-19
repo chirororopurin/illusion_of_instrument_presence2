@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DMI Experiment - Introduction</title>
+<style>
+  /* --- (既存の CSS スタイルは変更なし) --- */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  h1, h2 {
+    color: #222;
+  }
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  p, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  ul {
+    margin-left: 20px;
+  }
+  img {
+    max-width: 100%;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  /* Numbered list styling */
+  ol.number-circle {
+    counter-reset: li;
+    list-style: none;
+    padding-left: 0;
+  }
+  ol.number-circle > li {
+    counter-increment: li;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 2.5em;
+  }
+  ol.number-circle > li::before {
+    content: counter(li, cjk-ideographic);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .consent {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .consent input[type="checkbox"] {
+    transform: scale(1.3);
+  }
+  #startBtn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  #startBtn:hover { background-color: #1976d2; }
+  #startBtn:disabled { background-color: #aaa; cursor: not-allowed; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Perceptual Experiment on DMI Performance </h1>
+
+    <p style="font-size: 1.1em; color: #dc3545; font-weight: bold; border: 1px solid #dc3545; padding: 10px; margin-bottom: 25px; background-color: #f8d7da;">
+      ⚠️ Please read this page carefully before starting. If you do not follow the instructions correctly, you will not receive compensation.
+    </p>
+    
+    <h2>Purpose of the Experiment</h2>
+    <p>
+      This study is part of research on audience perception of **Digital Musical Instruments (DMIs)** and their performance. DMIs often allow performers to create sound through **gestures without physically touching an object**.
+    </p>
+    <p>
+      Our objective is to investigate a perceptual phenomenon where audiences, while watching such a performance, may strongly feel the presence of a musical instrument that is **not actually there**. We refer to this as the **"Illusion of Instrument Presence"**.
+    </p>
+
+    <img src="concept_diagram.png" alt="Conceptual diagram of Illusion of Instrument Presence" style="max-width: 500px; display: block; margin: 15px auto; border: 1px solid #ccc; border-radius: 6px;">
+    <p style="background-color: #e6f7ff; padding: 10px; border-left: 5px solid #007bff; font-weight: bold;">
+      ⚠️ IMPORTANT: These videos are not simple pantomime, but performances using gesture input for musical expression. To judge if the illusion occurs, please carefully observe and listen to **both the video and the sound**.
+    </p>
+    <p>
+      Your participation will help us understand how the **visual and auditory elements of a performance influence audience perception** and **appreciation** of these new forms of musical expression.
+    </p>
+
+    ---
+
+    <h2>Participation Details</h2>
+    <ul>
+      <li>You will watch a total of eight short performance videos (approximately 10 seconds each).</li>
+      <li>**While watching** the video, you will be asked to draw on the screen where you feel the illusion occurs.</li>
+      <li>After drawing, you will answer the following questions:
+        <ol>
+          <li>Did you feel the presence of an instrument in the video? (Yes / No)</li>
+          <li>If yes, separately from the drawing, how many instruments did you perceive? (Enter a number)</li>
+          <li>How interesting or impressive did you find the performance? (Rate on a 7-point scale)</li>
+        </ol>
+      </li>
+      <li>The total duration of the experiment, including the tutorial, is approximately 10 minutes.</li>
+    </ul>
+
+    ---
+
+    <h2>Task Instructions (Crucial)</h2>
+        <li>Select a pen color according to the instructions.</li>
+        <li>Play the video (it will start after a 3-2-1 countdown).</li>
+        <li><strong style="color: red;">While watching the video, mark (draw) the area(s) where you feel the presence of an instrument.</strong>
+          <ul>
+            <li>Use circles, squares, or other shapes to mark the locations.</li>
+            <li><strong style="color: red;">If you do not feel an instrument is present, you do not need to mark anything.</strong></li>
+            <li><strong style="color: red;">The video plays only once. You cannot redo it.</strong></li>
+          </ul>
+        </li>
+        <li>After watching and marking (drawing), answer the three questions:
+          <ul>
+            <li>Did you feel the presence of an instrument? (Yes / No)</li>
+            <li>If yes, how many instruments did you perceive? (Enter a number)</li>
+            <li>Rate how interesting you find the performance on a 7-point scale.</li>
+          </ul>
+        </li>
+        <li>Click the "Next Page" button to proceed. <strong style="color: red;">You cannot go back to previous pages.</strong></li>
+      </ol>
+      <ul>
+        <li>This sequence is repeated for 8 videos.</li>
+      </ul>
+      <div style="background-color: #fff3cd; padding: 10px; border-left: 5px solid #ffc107; margin-bottom: 10px;">
+        <p>A practice page is available before the main experiment. You can freely use it to get familiar with the interface.</p>
+        <p>The practice page plays a metronome sound. Please adjust your PC volume so you can hear it clearly, as sound will also be used in the experiment.</p>
+        <p>When viewing the video, please be aware that this is a performance using gesture input for musical expression, not simple pantomime, and carefully observe and listen to both the video and the sound.</p>
+      </div>
+      
+    <p>Below is an example of the experimental interface:</p>
+    <img src="index.png" alt="Experiment screenshot example">
+
+    ---
+
+    <h2>Participation Requirements & Notes</h2>
+    <ul>
+      <li><strong style="color: red;">Participation in this experiment requires that you are 18 years of age or older and that you are making the decision to participate based on your own free will.</strong></li>
+      <li>No prior musical experience is required.</li>
+      <li>Please participate in an environment where you can hear videos with sound (headphones or speakers).</li>
+      <li>Your responses will be collected anonymously and will not include personally identifiable information.</li>
+      <li>Do not share or distribute the videos.</li>
+      <li>This is a psychological experiment and may include illusory elements, but it does not pose any special stress.</li>
+      <li>[Data and Ethics] The data you provide will be used strictly for academic research purposes and nothing else.</li>
+    </ul>
+
+
+    <h2>Contribution to Research</h2>
+    <p>
+      This experiment helps to better understand audience perception of digital instruments.
+      The results contribute to research in music information processing and human-computer interaction (HCI).
+    </p>
+
+
+    <div style="margin-top: 30px; border-top: 2px solid #ccc; padding-top: 20px;">
+      <h2>Personal Questions</h2>
+      <p>The following questions are for statistical analysis purposes only. All data will be managed anonymously and used strictly for academic research.</p>
+  
+      <ol style="list-style: decimal; padding-left: 20px;">
+  
+          <li>Age (Please select one):<br>
+              <label><input type="radio" name="q1_age" value="<20"> Less than 20</label><br>
+              <label><input type="radio" name="q1_age" value="20-29"> 20–29</label><br>
+              <label><input type="radio" name="q1_age" value="30-39"> 30–39</label><br>
+              <label><input type="radio" name="q1_age" value="40-49"> 40–49</label><br>
+              <label><input type="radio" name="q1_age" value="50-59"> 50–59</label><br>
+              <label><input type="radio" name="q1_age" value="60-69"> 60–69</label><br>
+              <label><input type="radio" name="q1_age" value="70+"> 70 or older</label>
+          </li>
+          <br>
+  
+          <li>Gender (Please select one):<br>
+              <label><input type="radio" name="q2_gender" value="Male"> Male</label><br>
+              <label><input type="radio" name="q2_gender" value="Female"> Female</label><br>
+              <label><input type="radio" name="q2_gender" value="Prefer not to say"> Prefer not to say</label>
+          </li>
+          <br>
+  
+          <li>Have you ever attended a music performance (e.g., concert attendance)?<br>
+              <label><input type="radio" name="q3_attended" value="Yes"> Yes</label><br>
+              <label><input type="radio" name="q3_attended" value="No"> No</label>
+          </li>
+          <br>
+  
+          <li>Do you have any experience playing a musical instrument?<br>
+              <label><input type="radio" name="q4_played" value="Yes"> Yes</label><br>
+              <label><input type="radio" name="q4_played" value="No"> No</label>
+          </li>
+          <br>
+  
+          <li>If yes to Q4, please answer the following:
+              <ol type="a" style="list-style: lower-alpha; padding-left: 20px;">
+  
+                  <li>Which instrument(s) have you played? (Multiple selections possible)<br>
+                      <textarea name="q5a_instrument" rows="2" cols="50" placeholder="e.g., Piano, Guitar, Violin"></textarea>
+                      </li>
+                  <br>
+  
+                  <li>For how long have you played an instrument in total? (Please select one)<br>
+                      <label><input type="radio" name="q5b_duration" value="<1yr"> Less than 1 year</label><br>
+                      <label><input type="radio" name="q5b_duration" value="1-10yr"> 1 to 10 years</label><br>
+                      <label><input type="radio" name="q5b_duration" value="10+yr"> More than 10 years</label>
+                  </li>
+                  <br>
+  
+                  <li>How often do you currently play an instrument (per month)?<br>
+                      <label><input type="radio" name="q5c_frequency" value="0"> 0 times (or only a few times a year)</label><br>
+                      <label><input type="radio" name="q5c_frequency" value="1-4"> 1–4 times (Less than weekly)</label><br>
+                      <label><input type="radio" name="q5c_frequency" value="5+"> 5+ times (Weekly or more)</label>
+                  </li>
+              </ol>
+          </li>
+      </ol>
+  </div>
+
+    <h2>Contact Information</h2>
+    <p>
+      This study is conducted by the Ito Lab, Ochanomizu University.<br>
+      For questions, please contact:<br>
+      📧 g2120539@is.ocha.ac.jp
+    </p>
+
+    <div class="consent">
+      <input type="checkbox" id="consentCheck">
+      <label for="consentCheck">I have read the information above and agree to participate in this experiment.</label>
+    </div>
+    <button id="startBtn" disabled>Start Experiment</button>
+  </div>
+
+<script>
+  // プロリフィックIDなどの外部からのIDがない場合、一意のタイムスタンプIDを生成
+  // 本番環境では、Prolificや他のシステムから participantId をURLパラメータとして受け取るように設定することを推奨します。
+  const urlParams = new URLSearchParams(window.location.search);
+  const participantId = urlParams.get('prolificId') || new Date().getTime().toString(); 
+  
+  const consentCheck = document.getElementById("consentCheck");
+  const startBtn = document.getElementById("startBtn");
+
+  consentCheck.addEventListener("change", () => {
+    // 同意チェックボックスがチェックされているときのみボタンを有効化
+    startBtn.disabled = !consentCheck.checked;
+  });
+
+  /**
+   * フォームから個人質問の回答をJSON形式のオブジェクトとして取得する
+   * @returns {object} JSON形式の回答データ
+   */
+/**
+   * フォームから個人質問の回答をJSON形式のオブジェクトとして取得する
+   * @returns {object} JSON形式の回答データ
+   */
+   function getPersonalData() {
+    // ラジオボタンの選択値を取得するヘルパー関数
+    const getRadioValue = (name) => {
+      const checked = document.querySelector(`input[name="${name}"]:checked`);
+      return checked ? checked.value : null;
+    };
+    const playedInstrument = getRadioValue('q4_played');
+    
+    // 基本データ構造の取得
+    const data = {
+      // 1. 年齢
+      age: getRadioValue('q1_age'),
+      // 2. 性別
+      gender: getRadioValue('q2_gender'),
+      // 3. 鑑賞経験
+      attended_performance: getRadioValue('q3_attended'),
+      // 4. 演奏経験
+      played_instrument: playedInstrument,
+      // 5. 演奏経験の詳細は、最初は空のオブジェクトとして定義し、後で条件付きで埋める
+      instrument_details: {}
+    };
+
+    // 5. 演奏経験がある場合 ('Yes') のみ、詳細情報を埋める
+    if (playedInstrument === 'Yes') {
+      data.instrument_details = {
+        // 5a. 演奏楽器 (テキストエリアの値) - trim()で空白を除去
+        instruments_played: document.querySelector('textarea[name="q5a_instrument"]').value.trim(),
+        // 5b. 期間
+        duration: getRadioValue('q5b_duration'),
+        // 5c. 頻度
+        frequency: getRadioValue('q5c_frequency'),
+      };
+    } else {
+        // 演奏経験がない場合は、キーを削除してJSONをクリーンに保つ
+        delete data.instrument_details;
+    }
+
+    return data;
+  }
+  
+  /**
+   * データをサーバーに送信し、成功すれば次のページへ進む
+   */
+  async function submitPersonalDataAndProceed() {
+    if (!consentCheck.checked) return;
+
+    // フォームの入力チェック（最低限、ラジオボタンが全て選択されているか確認することを推奨）
+    const data = getPersonalData();
+    const filename = `${participantId}_personaldata_agreement.json`;
+
+    const statusElement = document.querySelector('#status'); // 画面上に status 要素がないため追加推奨
+
+    // ボタンの無効化とテキスト変更（UX向上）
+    startBtn.disabled = true;
+    const originalText = startBtn.textContent;
+    startBtn.textContent = "Saving Data...";
+
+    try {
+      // サーバーレス関数にデータを送信
+      const res = await fetch("/.netlify/functions/upload", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ participantId, filename, data })
+      });
+
+      if (!res.ok) {
+        // サーバー側でエラーが起きた場合
+        throw new Error(`Server error: ${res.status} ${await res.text()}`);
+      }
+      
+      console.log("✅ データ送信成功:", data);
+
+      // 成功した場合、次の実験ページへIDを付与して遷移
+      window.location.href = `test.html?pid=${participantId}`; 
+
+    } catch (error) {
+      console.error("❌ データ送信失敗:", error);
+      // 失敗した場合、ユーザーにフィードバック
+      alert("データの保存に失敗しました。インターネット接続を確認し、ページをリロードして再試行してください。");
+      // ボタンを元に戻す
+      startBtn.textContent = originalText;
+      startBtn.disabled = false; 
+    }
+  }
+
+  // 既存の click イベントを修正後の submitPersonalDataAndProceed に置き換える
+  startBtn.addEventListener("click", submitPersonalDataAndProceed);
+
+</script>
+</body>
+</html>
